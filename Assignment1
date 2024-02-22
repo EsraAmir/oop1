@@ -1,6 +1,5 @@
 class Passenger:
-    def __init__(self, name, contact_details, passport_number, loyalty_status=None):
-        # Constructor to initialize Passenger attributes
+    def __init__(self, name, contact_details, passport_number, loyalty_status=None):  # Constructor to initialize Passenger attributes
         self._name = name
         self._contact_details = contact_details
         self._passport_number = passport_number
@@ -12,32 +11,25 @@ class Passenger:
     def set_name(self, name): # Setter method to update passenger name
         self._name = name
 
-    def get_contact_details(self):
-        # Getter method to retrieve contact details
+    def get_contact_details(self):  # Getter method to retrieve contact details
         return self._contact_details
 
-    def set_contact_details(self, contact_details):
-        # Setter method to update contact details
+    def set_contact_details(self, contact_details):  # Setter method to update contact details
         self._contact_details = contact_details
 
-    def get_passport_number(self):
-        # Getter method to retrieve passport number
+    def get_passport_number(self): # Getter method to retrieve passport number
         return self._passport_number
 
-    def set_passport_number(self, passport_number):
-        # Setter method to update passport number
+    def set_passport_number(self, passport_number): # Setter method to update passport number
         self._passport_number = passport_number
 
-    def get_loyalty_status(self):
-        # Getter method to retrieve loyalty status
+    def get_loyalty_status(self): # Getter method to retrieve loyalty status
         return self._loyalty_status
 
-    def set_loyalty_status(self, loyalty_status):
-        # Setter method to update loyalty status
+    def set_loyalty_status(self, loyalty_status): # Setter method to update loyalty status
         self._loyalty_status = loyalty_status
 
-    def get_info(self):
-        # Method to generate and return passenger information
+    def get_info(self): # Method to generate and return passenger information
         info = f"**Passenger Information:**\n"
         info += f"- Name: {self._name}\n"
         info += f"- Contact Details: {self._contact_details}\n"
@@ -48,8 +40,7 @@ class Passenger:
 
 
 class Flight:
-    def __init__(self, airline_name, aircraft_type, flight_number, origin, destination, departure_time, arrival_time, origin_code, destination_code):
-        # Constructor to initialize Flight attributes
+    def __init__(self, airline_name, aircraft_type, flight_number, origin, destination, departure_time, arrival_time, origin_code, destination_code): # Constructor to initialize Flight attributes
         self._airline_name = airline_name
         self._aircraft_type = aircraft_type
         self._flight_number = flight_number
@@ -60,64 +51,49 @@ class Flight:
         self._origin_code = origin_code
         self._destination_code = destination_code
 
-    def get_airline_name(self):
-        # Getter method to retrieve airline name
+    def get_airline_name(self): # Getter method to retrieve airline name
         return self._airline_name
 
-    def set_airline_name(self, airline_name):
-        # Setter method to update airline name
+    def set_airline_name(self, airline_name): # Setter method to update airline name
         self._airline_name = airline_name
 
-    def get_aircraft_type(self):
-        # Getter method to retrieve aircraft type
+    def get_aircraft_type(self): # Getter method to retrieve aircraft type
         return self._aircraft_type
 
-    def set_aircraft_type(self, aircraft_type):
-        # Setter method to update aircraft type
+    def set_aircraft_type(self, aircraft_type): # Setter method to update aircraft type
         self._aircraft_type = aircraft_type
 
-    def get_flight_number(self):
-        # Getter method to retrieve flight number
+    def get_flight_number(self): # Getter method to retrieve flight number
         return self._flight_number
 
-    def set_flight_number(self, flight_number):
-        # Setter method to update flight number
+    def set_flight_number(self, flight_number): # Setter method to update flight number
         self._flight_number = flight_number
 
-    def get_origin(self):
-        # Getter method to retrieve origin
+    def get_origin(self): # Getter method to retrieve origin
         return self._origin
 
-    def set_origin(self, origin):
-        # Setter method to update origin
+    def set_origin(self, origin): # Setter method to update origin
         self._origin = origin
 
-    def get_destination(self):
-        # Getter method to retrieve destination
+    def get_destination(self): # Getter method to retrieve destination
         return self._destination
 
-    def set_destination(self, destination):
-        # Setter method to update destination
+    def set_destination(self, destination): # Setter method to update destination
         self._destination = destination
 
-    def get_departure_time(self):
-        # Getter method to retrieve departure time
+    def get_departure_time(self): # Getter method to retrieve departure time
         return self._departure_time
 
-    def set_departure_time(self, departure_time):
-        # Setter method to update departure time
+    def set_departure_time(self, departure_time): # Setter method to update departure time
         self._departure_time = departure_time
 
-    def get_arrival_time(self):
-        # Getter method to retrieve arrival time
+    def get_arrival_time(self): # Getter method to retrieve arrival time
         return self._arrival_time
 
-    def set_arrival_time(self, arrival_time):
-        # Setter method to update arrival time
+    def set_arrival_time(self, arrival_time):  # Setter method to update arrival time
         self._arrival_time = arrival_time
 
-    def get_info(self):
-        # Method to generate and return flight information
+    def get_info(self):  # Method to generate and return flight information
         info = f"**Flight Information:**\n"
         info += f"- Airline: {self._airline_name}\n"
         info += f"- Aircraft Type: {self._aircraft_type}\n"
@@ -130,20 +106,18 @@ class Flight:
 
 
 class BoardingPass:
-    def __init__(self, passenger, flight, seat_number, gate):
-        # Constructor to initialize BoardingPass attributes
+    def __init__(self, passenger, flight, seat_number, gate): # Constructor to initialize BoardingPass attributes
         self._passenger = passenger
         self._flight = flight
         self._seat_number = seat_number
         self._gate = gate
         self._barcode = None
 
-    def generate_barcode(self):
-        # Placeholder logic to generate a barcode (using a simple string for illustration)
+    def generate_barcode(self): # Placeholder logic to generate a barcode (using a simple string for illustration)
+
         self._barcode = "1234567890"
 
-    def print_boarding_pass(self):
-        # Placeholder logic to implement printing (can be updated with actual logic)
+    def print_boarding_pass(self): # Placeholder logic to implement printing (can be updated with actual logic)
         print("===================================")
         print("           Boarding Pass           ")
         print("===================================")
@@ -156,8 +130,7 @@ class BoardingPass:
         print(f"\nBarcode: {self._barcode}")
         print("===================================")
 
-    def get_info(self):
-        # Method to generate and return boarding pass information
+    def get_info(self):   # Method to generate and return boarding pass information
         info = f"========= Boarding Pass Information ===========\n"
         info += self._passenger.get_info()
         info += self._flight.get_info()
@@ -167,8 +140,7 @@ class BoardingPass:
 
 
 def main():
-    # Create passenger, flight, and boarding pass objects with data
-    passenger = Passenger("James Smith", "JamesSmith@hotmail.com", "123456789", "Gold - First Class")
+    passenger = Passenger("James Smith", "JamesSmith@hotmail.com", "123456789", "Gold - First Class") # Create passenger, flight, and boarding pass objects with data
     flight = Flight("National Airlines", "Boeing 737", "NA4321", "CHICAGO ORD (ORD)", "NEW YORK JFK (JFK)", "06 DEC 20 11:40", "13:30", "ORD", "JFK")
     boarding_pass = BoardingPass(passenger, flight, "09A", "03")
 
@@ -179,4 +151,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
